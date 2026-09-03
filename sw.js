@@ -1,6 +1,6 @@
 /* AppNest · טאיצ׳י 24 — Service Worker
    כלל זהב: להעלות את VERSION בכל עדכון, אחרת המטמון מגיש גרסה ישנה. */
-const VERSION = 'taichi24-v1.0.1';
+const VERSION = 'taichi24-v1.0.2';
 const APP_CACHE = 'app-' + VERSION;
 const SHELL = [
   './', './index.html', './appnest-assistant.js',

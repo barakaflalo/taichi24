@@ -15,16 +15,16 @@
 /* ============ AppNest · Tai Chi 24 ============ */
 :root{ --stage:#D7DAE0; --radius:16px; }
 /* themes: gold(default) · sky · jade · mist · plum · each night/day */
-[data-theme="gold"][data-mode="night"]{--bg:#0B0B0B;--surface:#161616;--surface2:#1f1f1f;--text:#EDE7D4;--muted:#B5AD9A;--accent:#C9A84C;--accent-ink:#0B0B0B;--line:#2c2a24}
-[data-theme="gold"][data-mode="day"]{--bg:#F5F3EC;--surface:#ffffff;--surface2:#f0ece0;--text:#241f14;--muted:#544D3D;--accent:#B08828;--accent-ink:#fff;--line:#e4dfce}
-[data-theme="sky"][data-mode="night"]{--bg:#0c1116;--surface:#151d25;--surface2:#1d2831;--text:#e6eef5;--muted:#A8B9C6;--accent:#6E9BC0;--accent-ink:#08111a;--line:#26333d}
-[data-theme="sky"][data-mode="day"]{--bg:#eef3f7;--surface:#fff;--surface2:#e4edf3;--text:#17303f;--muted:#47606F;--accent:#3C6485;--accent-ink:#fff;--line:#d7e2ea}
-[data-theme="jade"][data-mode="night"]{--bg:#0a1310;--surface:#122019;--surface2:#1a2c22;--text:#e3efe7;--muted:#A6BDB0;--accent:#5AA17F;--accent-ink:#05130c;--line:#213a2d}
-[data-theme="jade"][data-mode="day"]{--bg:#eef4ef;--surface:#fff;--surface2:#e2eee6;--text:#173026;--muted:#456253;--accent:#3d7d5c;--accent-ink:#fff;--line:#d5e5da}
-[data-theme="mist"][data-mode="night"]{--bg:#111417;--surface:#1b2025;--surface2:#242b31;--text:#e8ecef;--muted:#B2BAC1;--accent:#9fb1bd;--accent-ink:#12171b;--line:#2e363d}
-[data-theme="mist"][data-mode="day"]{--bg:#f1f3f5;--surface:#fff;--surface2:#e7ebee;--text:#242c33;--muted:#525C64;--accent:#5f7686;--accent-ink:#fff;--line:#dde2e6}
-[data-theme="plum"][data-mode="night"]{--bg:#120e16;--surface:#1d1622;--surface2:#271d30;--text:#ece5f2;--muted:#BAAEC7;--accent:#A981C9;--accent-ink:#100a16;--line:#332741}
-[data-theme="plum"][data-mode="day"]{--bg:#f3eff7;--surface:#fff;--surface2:#ebe2f2;--text:#271a33;--muted:#584966;--accent:#7d4ea5;--accent-ink:#fff;--line:#e2d6ec}
+[data-theme="gold"][data-mode="night"]{--bg:#0B0B0B;--surface:#161616;--surface2:#1f1f1f;--text:#EDE7D4;--muted:#C3BCA8;--accent:#C9A84C;--accent-ink:#0B0B0B;--line:#2c2a24}
+[data-theme="gold"][data-mode="day"]{--bg:#F5F3EC;--surface:#ffffff;--surface2:#f0ece0;--text:#241f14;--muted:#484233;--accent:#B08828;--accent-ink:#fff;--line:#e4dfce}
+[data-theme="sky"][data-mode="night"]{--bg:#0c1116;--surface:#151d25;--surface2:#1d2831;--text:#e6eef5;--muted:#B8C6D2;--accent:#6E9BC0;--accent-ink:#08111a;--line:#26333d}
+[data-theme="sky"][data-mode="day"]{--bg:#eef3f7;--surface:#fff;--surface2:#e4edf3;--text:#17303f;--muted:#3B5463;--accent:#3C6485;--accent-ink:#fff;--line:#d7e2ea}
+[data-theme="jade"][data-mode="night"]{--bg:#0a1310;--surface:#122019;--surface2:#1a2c22;--text:#e3efe7;--muted:#B5CABE;--accent:#5AA17F;--accent-ink:#05130c;--line:#213a2d}
+[data-theme="jade"][data-mode="day"]{--bg:#eef4ef;--surface:#fff;--surface2:#e2eee6;--text:#173026;--muted:#3A5648;--accent:#3d7d5c;--accent-ink:#fff;--line:#d5e5da}
+[data-theme="mist"][data-mode="night"]{--bg:#111417;--surface:#1b2025;--surface2:#242b31;--text:#e8ecef;--muted:#C0C6CC;--accent:#9fb1bd;--accent-ink:#12171b;--line:#2e363d}
+[data-theme="mist"][data-mode="day"]{--bg:#f1f3f5;--surface:#fff;--surface2:#e7ebee;--text:#242c33;--muted:#465058;--accent:#5f7686;--accent-ink:#fff;--line:#dde2e6}
+[data-theme="plum"][data-mode="night"]{--bg:#120e16;--surface:#1d1622;--surface2:#271d30;--text:#ece5f2;--muted:#C6BCD2;--accent:#A981C9;--accent-ink:#100a16;--line:#332741}
+[data-theme="plum"][data-mode="day"]{--bg:#f3eff7;--surface:#fff;--surface2:#ebe2f2;--text:#271a33;--muted:#4C3D59;--accent:#7d4ea5;--accent-ink:#fff;--line:#e2d6ec}
 
 *{box-sizing:border-box}
 html,body{margin:0}
@@ -49,7 +49,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
 /* home grid */
 .hero{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:14px}
 .hero h2{margin:0 0 4px;font-family:"Frank Ruhl Libre",serif;font-weight:600;font-size:22px}
-.hero p{margin:0 0 12px;color:var(--muted);font-size:15px;line-height:1.55}
+.hero p{margin:0 0 12px;color:var(--text);font-size:15px;line-height:1.55}
 .cta{width:100%;border:none;background:var(--accent);color:var(--accent-ink);font-family:inherit;font-weight:700;
   font-size:16px;padding:14px;border-radius:12px;cursor:pointer}
 .cta:hover{filter:brightness(1.06)}
@@ -63,7 +63,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
 .mcard:hover{border-color:var(--accent)}
 .mcard .n{font-family:"Frank Ruhl Libre",serif;color:var(--accent);font-size:15px;font-weight:600}
 .mcard .nm{font-size:15px;font-weight:600;line-height:1.28}
-.mcard .zh{color:var(--muted);font-size:12.5px}
+.mcard .zh{color:var(--text);opacity:.7;font-size:12.5px}
 .mcard .tick{position:absolute;inset-inline-end:10px;inset-block-start:10px;width:20px;height:20px;border-radius:50%;
   background:var(--accent);color:var(--accent-ink);display:none;place-items:center;font-size:12px;font-weight:700}
 .mcard.done .tick{display:grid}
@@ -157,7 +157,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
   <div class="top">
     <div class="title" id="appTitle">טאיצ׳י 24<small id="tag">הצורה המפושטת · 24 תנועות</small></div>
     <button class="ico" id="btnLang" aria-label="שפה">🌐</button>
-    <button class="ico" id="btnTheme" aria-label="עיצוב">🎨</button>
+    <button class="ico" id="btnTheme" aria-label="יום/לילה">🌙</button>
     <button class="ico" id="btnAbout" aria-label="אודות">ℹ️</button>
     <button class="ico" id="btnSettings" aria-label="הגדרות">⚙️</button>
   </div>
@@ -205,6 +205,8 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <div class="seg" id="gender"><button data-v="f" class="on" id="gF">מדריכה</button><button data-v="m" id="gM">מדריך</button></div></div>
     <div class="row"><span class="lbl" id="lblAuto">רצף</span>
       <div class="seg" id="autoSeg"><button data-v="0" class="on" id="auOff">כבוי</button><button data-v="1" id="auOn">אוטומטי</button></div></div>
+    <div class="row"><span class="lbl" id="lblNarr">הקראה</span>
+      <div class="seg" id="narrSeg"><button data-v="0" class="on" id="nrOff">כבוי</button><button data-v="1" id="nrOn">🔊 פועל</button></div></div>
   </div>
   <div class="desc" id="mDesc"></div>
   <button class="learn" id="btnLearn">סמן כנלמד ✓</button>
@@ -303,7 +305,7 @@ var store={
   set:function(k,v){try{localStorage.setItem(k,v);}catch(e){MEM[k]=v;}},
   del:function(k){try{localStorage.removeItem(k);}catch(e){}delete MEM[k];}
 };
-var VERSION='1.0.1';
+var VERSION='1.0.2';
 
 /* ============ movement data (content by stable id) ============ */
 var FORMS=[
@@ -383,7 +385,7 @@ var FORMS=[
 ];
 
 /* frames-per-movement (from the generated image set) */
-var NF={'01_commencing':8,'02_wildhorse':8,'03_whitecrane':8,'04_brushknee':8,'05_lute':8,'06_repulsemonkey':16,'07_sparrow_left':8,'08_sparrow_right':16,'09_singlewhip':16,'10_cloudhands':24,'11_singlewhip2':8,'12_highpat':8,'13_rightheelkick':16,'14_earsfists':16,'15_leftheelkick':16,'16_snakeleft':24,'17_snakeright':24,'18_shuttles':32,'19_needle':16,'20_fan':16,'21_parrypunch':24,'22_apparentclose':16,'23_crosshands':16,'24_closing':16};
+var NF={'01_commencing':8,'02_wildhorse':8,'03_whitecrane':8,'04_brushknee':8,'05_lute':8,'06_repulsemonkey':16,'07_sparrow_left':8,'08_sparrow_right':16,'09_singlewhip':16,'10_cloudhands':24,'11_singlewhip2':8,'12_highpat':8,'13_rightheelkick':16,'14_earsfists':16,'15_leftheelkick':16,'16_snakeleft':26,'17_snakeright':26,'18_shuttles':32,'19_needle':16,'20_fan':16,'21_parrypunch':24,'22_apparentclose':16,'23_crosshands':16,'24_closing':16};
 FORMS.forEach(function(f){f.nf=NF[f.slug]||8;});
 
 /* movement-1 frames embedded so it works even before other images are added */
@@ -391,12 +393,12 @@ var EMBED={"01_commencing": {"f": ["data:image/webp;base64,UklGRoAQAABXRUJQVlA4I
 
 /* ============ i18n ============ */
 var LANG={
- he:{tag:'הצורה המפושטת · 24 תנועות',heroH:'לומדים טאיצ׳י — צעד אחר צעד',heroP:'24 התנועות של הצורה המפושטת, עם הדגמה מצוירת לכל שלב. בחר תנועה, או התחל תרגול רצוף.',flow:'▶ תרגול רצוף',learned:'נלמדו',back:'חזרה',speed:'מהירות',demo:'מדגים',auto:'רצף',slow:'איטי',norm:'רגיל',fast:'מהיר',teacherF:'מדריכה',teacherM:'מדריך',off:'כבוי',on:'אוטומטי',mark:'סמן כנלמד ✓',marked:'✓ נלמד',prevM:'‹ הקודמת',nextM:'הבאה ›',soon:'התמונות של תנועה זו יתווספו בקרוב',settings:'הגדרות',about:'אודות',pos:function(a,b){return 'תנועה '+a+' מתוך '+b;},
+ he:{tag:'הצורה המפושטת · 24 תנועות',heroH:'לומדים טאיצ׳י — צעד אחר צעד',heroP:'24 התנועות של הצורה המפושטת, עם הדגמה מצוירת לכל שלב. בחר תנועה, או התחל תרגול רצוף.',flow:'▶ תרגול רצוף',learned:'נלמדו',back:'חזרה',speed:'מהירות',demo:'מדגים',auto:'רצף',slow:'איטי',norm:'רגיל',fast:'מהיר',teacherF:'מדריכה',teacherM:'מדריך',off:'כבוי',on:'אוטומטי',narr:'הקראה',narrOff:'כבוי',narrOn:'🔊 פועל',mark:'סמן כנלמד ✓',marked:'✓ נלמד',prevM:'‹ הקודמת',nextM:'הבאה ›',soon:'התמונות של תנועה זו יתווספו בקרוב',settings:'הגדרות',about:'אודות',pos:function(a,b){return 'תנועה '+a+' מתוך '+b;},
    sUser:'שם משתמש',sUserL:'שם / כינוי (מופיע בשיתופים ובגיבוי)',sLang:'שפה',sTheme:'עיצוב',sMode:'מצב',night:'לילה',day:'יום',sAi:'עוזר AI (אופציונלי · BYOK)',sBack:'גיבוי ושחזור',export:'⬇ ייצוא גיבוי (JSON)',import:'⬆ שחזור מגיבוי',shareApp:'🔗 שתף את האפליקציה',guide:'📖 הצג מדריך פתיחה',sReset:'איפוס',reset:'מחק את כל הנתונים',save:'שמור חיבור',clear:'נתק',provider:'ספק',apikey:'מפתח API',
    verL:'גרסה',devL:'פותח',platL:'פלטפורמה',storeL:'אחסון',storeV:'על המכשיר בלבד',licL:'רישיון',disc:'האפליקציה היא כלי לימוד כללי לטאיצ׳י ואינה ייעוץ רפואי. לפני התחלת פעילות גופנית — היוועץ במדריך מוסמך ו/או רופא. השימוש באחריות המשתמש.',
    saved:'נשמר',resetOk:'הכל נמחק',resetAsk:'למחוק את כל הנתונים? פעולה בלתי הפיכה.',resetAsk2:'בטוח? כל ההתקדמות וההגדרות יימחקו.',imported:'הגיבוי שוחזר',aiSaved:'החיבור נשמר',aiCleared:'נותק',
    ob:[['ברוך הבא','זו אפליקציה ללימוד 24 תנועות הטאיצ׳י של הצורה המפושטת — צעד אחר צעד, בקצב שלך.'],['הדגמה חיה','לכל תנועה יש נגן: הפעל, האט, ועצור על כל שלב. אפשר לבחור מדריך או מדריכה.'],['תרגול רצוף','במצב "רצף" האפליקציה עוברת בין התנועות אוטומטית — כמו תרגול מלא של הצורה.'],['עיצוב ושפה','5 ערכות צבע, מצב יום/לילה, ו-5 שפות — הכל מדף הבית.'],['הכל אצלך','ההתקדמות נשמרת על המכשיר בלבד. אפשר לגבות, לשחזר ולמחוק מתי שרוצים.']],obNext:'הבא',obDone:'מתחילים',obSkip:'דלג'},
- en:{tag:'The Simplified Form · 24 movements',heroH:'Learn Tai Chi — step by step',heroP:'The 24 movements of the simplified form, with an illustrated demo for each phase. Pick a movement, or start a flowing practice.',flow:'▶ Flow practice',learned:'learned',back:'Back',speed:'Speed',demo:'Demo',auto:'Flow',slow:'Slow',norm:'Normal',fast:'Fast',teacherF:'Instructor (F)',teacherM:'Instructor (M)',off:'Off',on:'Auto',mark:'Mark as learned ✓',marked:'✓ Learned',prevM:'‹ Previous',nextM:'Next ›',soon:'Images for this movement are coming soon',settings:'Settings',about:'About',pos:function(a,b){return 'Movement '+a+' of '+b;},
+ en:{tag:'The Simplified Form · 24 movements',heroH:'Learn Tai Chi — step by step',heroP:'The 24 movements of the simplified form, with an illustrated demo for each phase. Pick a movement, or start a flowing practice.',flow:'▶ Flow practice',learned:'learned',back:'Back',speed:'Speed',demo:'Demo',auto:'Flow',slow:'Slow',norm:'Normal',fast:'Fast',teacherF:'Instructor (F)',teacherM:'Instructor (M)',off:'Off',on:'Auto',narr:'Narration',narrOff:'Off',narrOn:'🔊 On',mark:'Mark as learned ✓',marked:'✓ Learned',prevM:'‹ Previous',nextM:'Next ›',soon:'Images for this movement are coming soon',settings:'Settings',about:'About',pos:function(a,b){return 'Movement '+a+' of '+b;},
    sUser:'Username',sUserL:'Name / nickname (shown in shares & backups)',sLang:'Language',sTheme:'Theme',sMode:'Mode',night:'Night',day:'Day',sAi:'AI assistant (optional · BYOK)',sBack:'Backup & restore',export:'⬇ Export backup (JSON)',import:'⬆ Restore from backup',shareApp:'🔗 Share the app',guide:'📖 Show intro guide',sReset:'Reset',reset:'Erase all data',save:'Save connection',clear:'Disconnect',provider:'Provider',apikey:'API key',
    verL:'Version',devL:'Developer',platL:'Platform',storeL:'Storage',storeV:'On device only',licL:'License',disc:'This app is a general tai chi learning tool, not medical advice. Consult a qualified instructor and/or physician before physical activity. Use at your own risk.',
    saved:'Saved',resetOk:'Everything erased',resetAsk:'Erase all data? This cannot be undone.',resetAsk2:'Sure? All progress and settings will be erased.',imported:'Backup restored',aiSaved:'Connection saved',aiCleared:'Disconnected',
@@ -436,6 +438,7 @@ function renderTexts(){
   document.getElementById('spSlow').textContent=T('slow');document.getElementById('spNorm').textContent=T('norm');document.getElementById('spFast').textContent=T('fast');
   document.getElementById('gF').textContent=T('teacherF');document.getElementById('gM').textContent=T('teacherM');
   document.getElementById('auOff').textContent=T('off');document.getElementById('auOn').textContent=T('on');
+  document.getElementById('lblNarr').textContent=T('narr');document.getElementById('nrOff').textContent=T('narrOff');document.getElementById('nrOn').textContent=T('narrOn');
   document.getElementById('mPrevMove').textContent=T('prevM');document.getElementById('mNextMove').textContent=T('nextM');
   document.getElementById('soonTxt').textContent=T('soon');
   document.getElementById('setTitle').textContent=T('settings');
@@ -478,6 +481,37 @@ function checkAvail(){FORMS.forEach(function(f){ if(EMBED[f.slug]){availMap[f.sl
 /* ============ player ============ */
 var SEQ=[];function buildSeq(n){var a=[],i;for(i=0;i<n;i++)a.push(i);for(i=n-2;i>=1;i--)a.push(i);return a;}
 var cur=0,gender='f',speed=260,pos=0,playing=false,timer=null,auto=false,loopsInMove=0,available=false;
+var speak=(store.get('taichi_speak')==='1'),speakTimer=null,phaseList=[],phaseIx=0,subIx=0,voices=[];
+function loadVoices(){try{voices=(window.speechSynthesis?speechSynthesis.getVoices():[])||[];}catch(e){voices=[];}}
+if('speechSynthesis' in window){loadVoices();try{speechSynthesis.onvoiceschanged=loadVoices;}catch(e){}}
+function voiceLang(){return state.lang==='en'?'en':(state.lang==='ar'?'ar':(state.lang==='ru'?'ru':(state.lang==='es'?'es':'he')));}
+function pickVoice(pref){for(var i=0;i<voices.length;i++){if(voices[i].lang&&voices[i].lang.toLowerCase().indexOf(pref)===0)return voices[i];}return null;}
+function speakRate(){return speed>=420?0.8:(speed>=260?0.95:1.1);}
+function say(text,onend){
+  if(!('speechSynthesis' in window)||!text){return false;}
+  try{speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text);var pref=voiceLang();var v=pickVoice(pref);
+    if(v){u.voice=v;u.lang=v.lang;}else{u.lang=pref==='he'?'he-IL':pref;}
+    u.rate=speakRate();u.onend=function(){onend&&onend();};u.onerror=function(){onend&&onend();};
+    speechSynthesis.speak(u);return true;
+  }catch(e){return false;}
+}
+function buildPhases(f){var groups=[],i;for(i=0;i<f.s.length;i++)groups.push([]);
+  for(var p=0;p<f.nf;p++){groups[Math.floor(p*f.s.length/f.nf)].push(p);}
+  var res=[];for(i=0;i<groups.length;i++){if(groups[i].length)res.push({label:f.s[i],frames:groups[i]});}return res;}
+function showPose(poseIx,label){var f=FORMS[cur];if(available){fig.src=frameSrc(f,gender,poseIx+1);fig.alt=fname(f)+' — '+label;}phase.textContent=label;tcur.textContent=(poseIx+1);scrub.value=Math.min(poseIx,+scrub.max);}
+function startSpeakPlay(){phaseList=buildPhases(FORMS[cur]);phaseIx=0;playSpeakPhase();}
+function playSpeakPhase(){
+  if(!playing)return;
+  if(phaseIx>=phaseList.length){loopsInMove++;if(auto){nextMove(true);return;}phaseIx=0;}
+  var ph=phaseList[phaseIx];subIx=0;clearInterval(speakTimer);
+  function fstep(){var poseIx=ph.frames[subIx%ph.frames.length];showPose(poseIx,ph.label);subIx++;}
+  fstep();speakTimer=setInterval(fstep,speed);
+  var advanced=false;
+  function adv(){if(advanced||!playing)return;advanced=true;clearInterval(speakTimer);phaseIx++;playSpeakPhase();}
+  var spoke=say(ph.label,adv);
+  if(!spoke){setTimeout(adv,Math.max(1400,ph.frames.length*speed));}
+}
 var fig=document.getElementById('fig'),phase=document.getElementById('phase'),scrub=document.getElementById('scrub'),tcur=document.getElementById('tcur'),playB=document.getElementById('play'),pic=document.getElementById('pic'),stageEl=document.getElementById('stage');
 fig.onerror=function(){if(fig.src.indexOf('.webp')>-1){fig.src=fig.src.replace('.webp','.png');}};
 
@@ -504,8 +538,8 @@ function preload(f){for(var g=0;g<2;g++){var gg=g?'m':'f';for(var n=1;n<=f.nf;n+
 function render(){var f=FORMS[cur];var poseIx=SEQ[pos];var lab=f.s[Math.floor(poseIx*f.s.length/f.nf)]||'';if(available){fig.src=frameSrc(f,gender,poseIx+1);fig.alt=fname(f)+' — '+lab;}
   phase.textContent=lab;tcur.textContent=(poseIx+1);scrub.value=pos;}
 function tick(){pos=(pos+1)%SEQ.length; if(pos===0){loopsInMove++; if(auto&&loopsInMove>=2){nextMove(true);return;}} render();}
-function startPlay(){if(playing||!available)return;playing=true;pic.innerHTML='<path d="M6 5h4v14H6zm8 0h4v14h-4z"/>';playB.setAttribute('aria-label','השהה');timer=setInterval(tick,speed);}
-function stop(){playing=false;pic.innerHTML='<path d="M8 5v14l11-7z"/>';playB.setAttribute('aria-label','הפעל');clearInterval(timer);}
+function startPlay(){if(playing||!available)return;playing=true;pic.innerHTML='<path d="M6 5h4v14H6zm8 0h4v14h-4z"/>';playB.setAttribute('aria-label','השהה');if(speak){startSpeakPlay();}else{timer=setInterval(tick,speed);}}
+function stop(){playing=false;pic.innerHTML='<path d="M8 5v14l11-7z"/>';playB.setAttribute('aria-label','הפעל');clearInterval(timer);clearInterval(speakTimer);try{if('speechSynthesis' in window)speechSynthesis.cancel();}catch(e){}}
 function togglePlay(){playing?stop():startPlay();}
 function nextMove(keepAuto){var ni=(cur+1)%FORMS.length;autoStartFlag=(auto&&keepAuto);openMove(ni,false);}
 function prevMove(){var pi=(cur-1+FORMS.length)%FORMS.length;openMove(pi,false);}
@@ -514,7 +548,8 @@ playB.onclick=togglePlay;
 document.getElementById('next').onclick=function(){stop();pos=(pos+1)%SEQ.length;render();};
 document.getElementById('prev').onclick=function(){stop();pos=(pos-1+SEQ.length)%SEQ.length;render();};
 scrub.oninput=function(){stop();pos=+scrub.value;render();};
-document.getElementById('speed').onclick=function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(this.children,function(x){x.classList.remove('on');});b.classList.add('on');speed=+b.dataset.v;if(playing){clearInterval(timer);timer=setInterval(tick,speed);}};
+document.getElementById('speed').onclick=function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(this.children,function(x){x.classList.remove('on');});b.classList.add('on');speed=+b.dataset.v;if(playing){stop();startPlay();}};
+document.getElementById('narrSeg').onclick=function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(this.children,function(x){x.classList.remove('on');});b.classList.add('on');speak=b.dataset.v==='1';store.set('taichi_speak',speak?'1':'0');if(playing){stop();startPlay();}};
 document.getElementById('gender').onclick=function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(this.children,function(x){x.classList.remove('on');});b.classList.add('on');gender=b.dataset.v;render();};
 document.getElementById('autoSeg').onclick=function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(this.children,function(x){x.classList.remove('on');});b.classList.add('on');auto=b.dataset.v==='1';loopsInMove=0;};
 document.getElementById('mNextMove').onclick=function(){nextMove(false);};
@@ -527,7 +562,9 @@ document.getElementById('btnFlow').onclick=function(){auto=true;document.querySe
 /* ============ header buttons ============ */
 document.getElementById('btnSettings').onclick=function(){fillSettings();show('settings');};
 document.getElementById('btnAbout').onclick=function(){show('about');};
-document.getElementById('btnTheme').onclick=function(){cycleTheme();};
+document.getElementById('btnTheme').onclick=function(){toggleMode();};
+function updateModeBtn(){var b=document.getElementById('btnTheme');b.textContent=state.mode==='night'?'🌙':'☀️';b.setAttribute('aria-label',state.mode==='night'?'עבור למצב יום':'עבור למצב לילה');}
+function toggleMode(){state.mode=(state.mode==='night')?'day':'night';store.set('taichi_mode',state.mode);applyTheme();updateModeBtn();var seg=document.getElementById('modeSeg');if(seg){[].forEach.call(seg.children,function(x){x.classList.toggle('on',x.dataset.v===state.mode);});}}
 document.getElementById('btnLang').onclick=function(){cycleLang();};
 function cycleTheme(){var order=['gold','sky','jade','mist','plum'];var i=order.indexOf(state.theme);state.theme=order[(i+1)%order.length];store.set('taichi_theme',state.theme);applyTheme();markThemeSwatch();toast(state.theme);}
 function cycleLang(){var order=['he','en','ru','es','ar'];var i=order.indexOf(state.lang);state.lang=order[(i+1)%order.length];store.set('taichi_lang',state.lang);applyLang();}
@@ -600,7 +637,8 @@ window.APPNEST_ASSISTANT_CONFIG={
 };
 
 /* ============ init ============ */
-buildSwatches();applyTheme();applyLang();renderGrid();checkAvail();
+buildSwatches();applyTheme();applyLang();renderGrid();checkAvail();updateModeBtn();
+(function(){var v=speak?'1':'0';[].forEach.call(document.querySelectorAll('#narrSeg button'),function(x){x.classList.toggle('on',x.dataset.v===v);});})();
 if(!store.get('taichi_ob')){startOb();}
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
 </script>
